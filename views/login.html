@@ -11,106 +11,83 @@
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
 
-    <!--Link iconscout-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!--Link css-->
+    <!-----css---->
     <link rel="stylesheet" href="/assets/css/index.css" />
-    <link rel="stylesheet" href="/assets/css/login.css" />
   </head>
-  <body class="login-page">
-    <nav>
-      <div class="container nav-wrapper">
-        <h2 class="log">
-          <a href="/views/index.html">Jolly<span>Mountain</span></a>
-        </h2>
-        <div class="search-bar">
-          <i class="uil uil-search-alt"></i>
-          <input type="search" placeholder="Search Mountain" />
-        </div>
-        <div class="login">
-          <a class="btn btn-primary" href="/views/login.html">Login</a>
+  <body class="body-index">
+    <!----- Navigation------->
+    <div class="container-nav">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="uil uil-hunting"></i></span>
+              <span class="title">Jolly Mountain</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/views/index.html">
+              <span class="icon"><i class="uil uil-home"></i></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/views/mountains.html">
+              <span class="icon"><i class="uil uil-mountains"></i></span>
+              <span class="title">Mountains</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/views/inventory.html">
+              <span class="icon"><i class="uil uil-backpack"></i></span>
+              <span class="title">Inventory</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/views/login.html">
+              <span class="icon"><i class="uil uil-sign-in-alt"></i></span>
+              <span class="title">Sing in</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!----Main------>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search Mountain" />
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div>
+
           <div class="profile-picture">
-            <img
-              src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-              alt=""
-            />
+            <img src="/assets/images/profile-1.jpg" />
           </div>
         </div>
-      </div>
-    </nav>
-    <!--Login page-->
-    <div class="container-login" id="container-login">
-      <div class="form-container sign-up-container">
-        <form action="#">
-          <h1>Create Account</h1>
-          <div class="social-container">
-            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <span>or use your email for registration</span>
-          <div class="infield">
-            <input type="text" placeholder="Name" />
-            <label></label>
-          </div>
-          <div class="infield">
-            <input type="email" placeholder="Email" name="email" />
-            <label></label>
-          </div>
-          <div class="infield">
-            <input type="password" placeholder="Password" />
-            <label></label>
-          </div>
-          <button>Sign Up</button>
-        </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <form action="#">
-          <h1>Sign in</h1>
-          <div class="social-container">
-            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <span>or use your account</span>
-          <div class="infield">
-            <input type="email" placeholder="Email" name="email" />
-            <label></label>
-          </div>
-          <div class="infield">
-            <input type="password" placeholder="Password" />
-            <label></label>
-          </div>
-          <a href="#" class="forgot">Forgot your password?</a>
-          <button>Sign In</button>
-        </form>
-      </div>
-      <div class="overlay-container" id="overlayCon">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Welcome Back!</h1>
-            <p>
-              To keep connected with us please login with your personal info
-            </p>
-            <button>Sign In</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Hello, Friend!</h1>
-            <p>Enter your personal details and start journey with us</p>
-            <button>Sign Up</button>
-          </div>
-        </div>
-        <button id="overlayBtn"></button>
       </div>
     </div>
 
-    <script src="/assets/js/login.js"></script>
+    <!---Javascript------>
+    <script src="/assets/js/main.js"></script>
+    <!----Ionicon----->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

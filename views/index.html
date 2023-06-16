@@ -11,353 +11,247 @@
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
 
-    <!--Link css-->
+    <!-----css---->
     <link rel="stylesheet" href="/assets/css/index.css" />
   </head>
-  <body>
-    <nav>
-      <div class="container nav-wrapper">
-        <h2 class="log">Jolly<span>Mountain</span></h2>
-        <div class="search-bar">
-          <i class="uil uil-search-alt"></i>
-          <input
-            type="search"
-            id="mountain-search"
-            placeholder="Search Mountain"
-          />
+  <body class="body-index">
+    <!----- Navigation------->
+    <div class="container-nav">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="uil uil-hunting"></i></span>
+              <span class="title">Jolly Mountain</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/views/index.html">
+              <span class="icon"><i class="uil uil-home"></i></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/views/mountains.html">
+              <span class="icon"><i class="uil uil-mountains"></i></span>
+              <span class="title">Mountains</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/views/inventory.html">
+              <span class="icon"><i class="uil uil-backpack"></i></span>
+              <span class="title">Inventory</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/views/login.html">
+              <span class="icon"><i class="uil uil-sign-in-alt"></i></span>
+              <span class="title">Sing in</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!----Main------>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search Mountain" />
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div>
+
+          <div class="profile-picture" onclick="redirectToLogin()">
+            <img src="/assets/images/profile-1.jpg" />
+          </div>
         </div>
-        <div class="login">
-          <a class="btn btn-primary" href="/views/login.html">Login</a>
-          <div class="profile-picture">
-            <img
-              src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-              alt=""
-            />
+
+        <!-------CARD--------->
+
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="cardName">Gunung Bromo</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="cardName">Gunung Rinjani</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="cardName">Gunung Slamet</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="cardName">Gunung Prau</div>
+            </div>
+          </div>
+        </div>
+
+        <!-------- recent mountain ---------->
+        <div class="details">
+          <div class="recentMountain">
+            <div class="cardHeader">
+              <h2>Recent Mountain</h2>
+              <a href="#" class="btn">View all</a>
+            </div>
+
+            <table>
+              <thead></thead>
+
+              <tbody>
+                <tr>
+                  <td data-image="/assets/images/gunungbromo.jpg">
+                    Gunung Bromo
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-image="/assets/images/gunungrinjani.jpg">
+                    Gunung Rinjani
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-image="/assets/images/gunungslamet.jpg">
+                    Gunung Slamet
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-image="/assets/images/gunungprau.jpg">
+                    Gunung Prau
+                  </td>
+                </tr>
+                <tr>
+                  <td data-image="/assets/images/gunungsemeru.jpg">
+                    Gunung semeru
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-image="/assets/images/gunungijen.jpg">
+                    Gunung Ijen
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-------Recent Inventory---------->
+          <div class="recentInventory">
+            <div class="cardHeader">
+              <h2>Recent Inventory</h2>
+            </div>
+
+            <table>
+              <tr>
+                <td width="60px">
+                  <div class="icon-inv">
+                    <i class="uil uil-medical-square-full"></i>
+                  </div>
+                </td>
+                <td>
+                  <h4>Obat Pusing <br /><span> 10 </span></h4>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="60px">
+                  <div class="icon-inv">
+                    <i class="uil uil-medical-square-full"></i>
+                  </div>
+                </td>
+                <td>
+                  <h4>Obat Pusing <br /><span> 10 </span></h4>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="60px">
+                  <div class="icon-inv">
+                    <i class="uil uil-medical-square-full"></i>
+                  </div>
+                </td>
+                <td>
+                  <h4>Obat Pusing <br /><span> 10 </span></h4>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="60px">
+                  <div class="icon-inv">
+                    <i class="uil uil-medical-square-full"></i>
+                  </div>
+                </td>
+                <td>
+                  <h4>Obat Pusing <br /><span> 10 </span></h4>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="60px">
+                  <div class="icon-inv">
+                    <i class="uil uil-medical-square-full"></i>
+                  </div>
+                </td>
+                <td>
+                  <h4>Obat Pusing <br /><span> 10 </span></h4>
+                </td>
+              </tr>
+
+              <tr>
+                <td width="60px">
+                  <div class="icon-inv">
+                    <i class="uil uil-medical-square-full"></i>
+                  </div>
+                </td>
+                <td>
+                  <h4>Obat Pusing <br /><span> 10 </span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="icon-inv">
+                    <i class="uil uil-medical-square-full"></i>
+                  </div>
+                </td>
+                <td>
+                  <h4>Obat Pusing <br /><span> 10 </span></h4>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <!----------------- MAIN ------------------->
-    <main>
-      <div class="container-main">
-        <!----------------- MAIN-LEFT ------------------->
-        <div class="main-left">
-          <a class="profile">
-            <div class="profile-picture">
-              <img src="/assets/images/profile-1.jpg" />
-            </div>
-            <div class="handle">
-              <h4>Fahsal Marraz</h4>
-              <p class="text-muted">@Fahsal Marraz</p>
-            </div>
-          </a>
-
-          <!----------------- SIDEBAR ------------------->
-          <div class="sidebar">
-            <a class="menu-item active" href="/views/index.html">
-              <span><i class="uil uil-home"></i></span>
-              <h3>Home</h3>
-            </a>
-            <a class="menu-item" href="/views/mountain.html">
-              <span><i class="uil uil-mountains-sun"></i></span>
-              <h3>Mountain</h3>
-            </a>
-            <a class="menu-item" href="/views/inventory.html">
-              <span><i class="uil uil-backpack"></i></span>
-              <h3>Inventory</h3>
-            </a>
-          </div>
-          <!----------------- END SIDEBAR ------------------->
-        </div>
-
-        <!----------------- MAIN-MIDDLE ------------------->
-        <div class="main-middle">
-          <!----------------- STORIES  ------------------->
-          <div class="stories">
-            <div class="story">
-              <div class="profile-picture">
-                <img
-                  src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                />
-              </div>
-              <p class="name">Gunung Merbabu</p>
-            </div>
-
-            <div class="story">
-              <div class="profile-picture">
-                <img src="/assets/images/GunungSlamet1.jpg" />
-              </div>
-              <p class="name">Gunung Rinjani</p>
-            </div>
-
-            <div class="story">
-              <div class="profile-picture">
-                <img src="/assets/images/gunungrinjani1.jpg" />
-              </div>
-              <p class="name">Gunung Slamet</p>
-            </div>
-
-            <div class="story">
-              <div class="profile-picture">
-                <img src="/assets/images/gunungbromo1.jpg" />
-              </div>
-              <p class="name">Gunung Kerinci</p>
-            </div>
-
-            <div class="story">
-              <div class="profile-picture">
-                <img src="/assets/images/gunungbromo1.jpg" />
-              </div>
-              <p class="name">Gunung Prau</p>
-            </div>
-
-            <div class="story">
-              <div class="profile-picture">
-                <img src="/assets/images/gunungbromo1.jpg" />
-              </div>
-              <p class="name">Gunung Guntur</p>
-            </div>
-          </div>
-          <!-----------------AKHIR STORIES  ------------------->
-
-          <!----------------- FEED ------------------->
-          <div class="feeds">
-            <!----------------- FEED 1 ------------------->
-            <div class="feed">
-              <div class="head">
-                <div class="mountain-feed">
-                  <div class="profile-picture">
-                    <img src="/assets/images/profile-1.jpg" />
-                  </div>
-                  <div class="ingo">
-                    <h3>Gunung Bromo</h3>
-                    <small> Taman Nasional Bromo Tengger Semeru</small>
-                  </div>
-                </div>
-                <span class="edit">
-                  <i class="uil uil-ellipsis-h"></i>
-                </span>
-              </div>
-
-              <div class="photo">
-                <img src="/assets/images/gunungbromo1.jpg" />
-              </div>
-
-              <div class="action-button">
-                <div class="interaction-buttons">
-                  <span><i class="uil uil-heart"></i></span>
-                  <span><i class="uil uil-comment-dots"></i></span>
-                  <span><i class="uil uil-share-alt"></i></span>
-                </div>
-                <div class="bookmark">
-                  <span><i class="uil uil-bookmark-full"></i></span>
-                </div>
-              </div>
-
-              <div class="liked-by">
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <p>liked by <b>Fahsal Marraz</b> and <b>2,999 other</b></p>
-              </div>
-              <div class="caption">
-                <p>
-                  <b>Fahsal Marraz</b> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Aperiam, dignissimos!
-                </p>
-              </div>
-              <div class="comments text-muted">view all 19 comments</div>
-            </div>
-            <!----------------- AKHIR FEED ------------------->
-
-            <!----------------- FEED 2 ------------------->
-            <div class="feed">
-              <div class="head">
-                <div class="mountain-feed">
-                  <div class="profile-picture">
-                    <img src="/assets/images/profile-1.jpg" />
-                  </div>
-                  <div class="ingo">
-                    <h3>Gunung Guntur</h3>
-                    <small> Taman Nasional Bromo Tengger Semeru</small>
-                  </div>
-                </div>
-                <span class="edit">
-                  <i class="uil uil-ellipsis-h"></i>
-                </span>
-              </div>
-
-              <div class="photo">
-                <img src="/assets/images/gunungbromo1.jpg" />
-              </div>
-
-              <div class="action-button">
-                <div class="interaction-buttons">
-                  <span><i class="uil uil-heart"></i></span>
-                  <span><i class="uil uil-comment-dots"></i></span>
-                  <span><i class="uil uil-share-alt"></i></span>
-                </div>
-                <div class="bookmark">
-                  <span><i class="uil uil-bookmark-full"></i></span>
-                </div>
-              </div>
-
-              <div class="liked-by">
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <p>liked by <b>Fahsal Marraz</b> and <b>2,999 other</b></p>
-              </div>
-              <div class="caption">
-                <p>
-                  <b>Fahsal Marraz</b> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Aperiam, dignissimos!
-                </p>
-              </div>
-              <div class="comments text-muted">view all 19 comments</div>
-            </div>
-            <!----------------- AKHIR FEED ------------------->
-
-            <!----------------- FEED 3 ------------------->
-            <div class="feed">
-              <div class="head">
-                <div class="mountain-feed">
-                  <div class="profile-picture">
-                    <img src="/assets/images/profile-1.jpg" />
-                  </div>
-                  <div class="ingo">
-                    <h3>Gunung Slamet</h3>
-                    <small> Taman Nasional Bromo Tengger Semeru</small>
-                  </div>
-                </div>
-                <span class="edit">
-                  <i class="uil uil-ellipsis-h"></i>
-                </span>
-              </div>
-
-              <div class="photo">
-                <img src="/assets/images/gunungbromo1.jpg" />
-              </div>
-
-              <div class="action-button">
-                <div class="interaction-buttons">
-                  <span><i class="uil uil-heart"></i></span>
-                  <span><i class="uil uil-comment-dots"></i></span>
-                  <span><i class="uil uil-share-alt"></i></span>
-                </div>
-                <div class="bookmark">
-                  <span><i class="uil uil-bookmark-full"></i></span>
-                </div>
-              </div>
-
-              <div class="liked-by">
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <p>liked by <b>Fahsal Marraz</b> and <b>2,999 other</b></p>
-              </div>
-              <div class="caption">
-                <p>
-                  <b>Fahsal Marraz</b> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Aperiam, dignissimos!
-                </p>
-              </div>
-              <div class="comments text-muted">view all 19 comments</div>
-            </div>
-            <!----------------- AKHIR FEED ------------------->
-
-            <!----------------- FEED 4 ------------------->
-            <div class="feed">
-              <div class="head">
-                <div class="mountain-feed">
-                  <div class="profile-picture">
-                    <img src="/assets/images/profile-1.jpg" />
-                  </div>
-                  <div class="ingo">
-                    <h3>Gunung Rinjani</h3>
-                    <small> Taman Nasional Bromo Tengger Semeru</small>
-                  </div>
-                </div>
-                <span class="edit">
-                  <i class="uil uil-ellipsis-h"></i>
-                </span>
-              </div>
-
-              <div class="photo">
-                <img src="/assets/images/gunungbromo1.jpg" />
-              </div>
-
-              <div class="action-button">
-                <div class="interaction-buttons">
-                  <span><i class="uil uil-heart"></i></span>
-                  <span><i class="uil uil-comment-dots"></i></span>
-                  <span><i class="uil uil-share-alt"></i></span>
-                </div>
-                <div class="bookmark">
-                  <span><i class="uil uil-bookmark-full"></i></span>
-                </div>
-              </div>
-
-              <div class="liked-by">
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <span
-                  ><img
-                    src="/assets/images/330px-Megawati_Sukarnoputri_in_hijab_(cropped).png"
-                /></span>
-                <p>liked by <b>Fahsal Marraz</b> and <b>2,999 other</b></p>
-              </div>
-              <div class="caption">
-                <p>
-                  <b>Fahsal Marraz</b> Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Aperiam, dignissimos!
-                </p>
-              </div>
-              <div class="comments text-muted">view all 19 comments</div>
-            </div>
-            <!----------------- AKHIR FEED ------------------->
-          </div>
-        </div>
-
-        <!----------------- MAIN-RIGHT ------------------->
-        <div class="main-right"></div>
-      </div>
-      <!----------------- AKHIR MAIN-RIGHT ------------------->
-    </main>
+    <!---Javascript------>
     <script src="/assets/js/main.js"></script>
+    <!----Ionicon----->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
